@@ -1,0 +1,17 @@
+{application, simple_http_proxy, [
+  {id, "simple_http_proxy"},
+  {description, "Simple http proxy"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib,
+    crypto,
+    ssl,
+    lager,
+    ranch,
+    cowboy
+  ]},
+  {mod, { simple_http_proxy, []}},
+  {env, []}
+]}.
